@@ -1,5 +1,5 @@
-import SongotterCard from '../components/SongotterCard';
-import PortfolioCard from '../components/PortfolioCard';
+//import SongotterCard from '../components/SongotterCard';
+import PortfolioCard from '../components/PortfolioCard.js';
 import songotterHome from '../assets/Songotter-Home.png';
 
 export default function Projects(){
