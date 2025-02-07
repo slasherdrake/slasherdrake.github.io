@@ -9,6 +9,7 @@ const App = () => {
     <Router>
       <div className="app">
         <NavBar />
+        <div className='nav-space'></div>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

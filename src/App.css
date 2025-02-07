@@ -1,8 +1,114 @@
+#root{
+  background-color: #0F1819;
+  color: #EBEBEB;
+  
+}
+.flex{
+  display: flex;
+}
 .container-lg{
   margin-left: 2%;
   margin-right: 2%;
+  width:100%;
 }
-.flex{
-  display: flex; 
+.green{
+  color: #99EF03;
 }
 
+.logo{
+  height:4rem;
+}
+
+.nav{
+  margin-top: 2rem;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+}
+.nav-space{
+  height:140px;
+}
+
+.nav-col{
+  display:flex;
+  align-items: center;
+  width:100%;
+}
+
+.name{
+  padding-left: 20px;
+}
+.nav-right-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  position: relative;
+  text-decoration: none;
+  color:#EBEBEB;
+  overflow: hidden;
+}
+.op-grey{
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+.border-grey{
+  border:1px solid hsla(0, 0%, 100%, 0.1);
+}
+.under-text{
+  position: absolute;
+  top:0;
+  height: 0%;
+  width: 100%;
+  color: #0F1819;
+  z-index:6;
+}
+.under{
+  height:0%;
+  width: 100%;
+  background-color: #EBEBEB;
+  position: absolute;
+  bottom:0;
+  z-index: 5;
+  /* transition: height 0.3s ease; */
+}
+
+.nav-right-box:hover .under{
+  height: 100%;
+  animation: under-nav 0.3s ease;
+}
+
+.nav-right-box:hover .under-text{
+  height: 100%;
+  animation: under-text 0.3s ease;
+}
+.nav-right-box:not(:hover) .under{
+  height: 0%;
+  animation: under-nav-after 0.3s ease;
+}
+
+@keyframes under-nav{
+  from{
+    height:0%;
+  }
+  to{
+    height:100%;
+  }
+}
+@keyframes under-nav-after{
+  from{
+    height:100%;
+  }
+  to{
+    height:0%;
+  }
+}
+
+@keyframes under-text{
+  from{
+    height:0%;
+  }
+  to{
+    height:100%;
+  }
+}
