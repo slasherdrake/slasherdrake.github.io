@@ -10,20 +10,19 @@
   margin-left: 2%;
   margin-right: 2%;
   width:100%;
+  position: relative;
 }
 .green{
   color: #99EF03;
 }
 
-.logo{
-  height:4rem;
-}
 
 .nav{
   margin-top: 2rem;
   height: 4rem;
   width: 100%;
   position: fixed;
+  z-index:100;
 }
 .nav-space{
   height:140px;
@@ -31,13 +30,11 @@
 
 .nav-col{
   display:flex;
+  position:relative;
   align-items: center;
   width:100%;
 }
 
-.name{
-  padding-left: 20px;
-}
 .nav-right-box {
   flex: 1;
   display: flex;
@@ -62,6 +59,7 @@
   width: 100%;
   color: #0F1819;
   z-index:6;
+  transition: 0.3s ease;
 }
 .under{
   height:0%;
@@ -70,24 +68,20 @@
   position: absolute;
   bottom:0;
   z-index: 5;
-  /* transition: height 0.3s ease; */
+  transition: 0.3s ease;
 }
 
 .nav-right-box:hover .under{
   height: 100%;
-  animation: under-nav 0.3s ease;
 }
 
 .nav-right-box:hover .under-text{
   height: 100%;
-  animation: under-text 0.3s ease;
-}
-.nav-right-box:not(:hover) .under{
-  height: 0%;
-  animation: under-nav-after 0.3s ease;
+  /* animation: height-up 0.3s ease; */
 }
 
-@keyframes under-nav{
+
+@keyframes height-up{
   from{
     height:0%;
   }
@@ -95,7 +89,7 @@
     height:100%;
   }
 }
-@keyframes under-nav-after{
+@keyframes height-down{
   from{
     height:100%;
   }
@@ -104,11 +98,86 @@
   }
 }
 
-@keyframes under-text{
-  from{
-    height:0%;
+
+
+.name{
+  
+  /* width: calc(100% -4rem); */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: #273030; */
+  position: absolute;
+  
+  background-color: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(10px);
+  animation: name 2.2s ease forwards;
+}
+.name-words{
+  padding-left: 20px;
+  opacity:0;
+  transition: 2s;
+}
+.logo{
+  height:4rem;
+  width: 4rem;
+  position: relative;
+  left:-4rem;
+  animation: width-up-4rem 2.2s ease forwards;
+}
+.logo-container{
+  height: 4rem;
+  width:4rem;
+  overflow: hidden;
+}
+
+@keyframes width-up-4rem{
+  0%{
+    left:-4rem;
   }
-  to{
-    height:100%;
+  75%{
+    left:-3.6rem;
   }
+  99%{
+    left:0rem; 
+  }
+  100%{
+    left:0rem;
+  }
+}
+
+@keyframes name{
+  0%{
+    width: 0;
+    left: 0;
+    
+  }
+  75%{
+    width:calc(100% - .4rem);
+    left: .4rem;
+    
+  }
+  99%{
+    width:calc(100% - 4rem);
+    left: 4rem;
+    
+  }
+  100%{
+    width: calc(100% - 4rem);
+    left:4rem;
+  }
+}
+
+.logo-container:hover + .name .name-words{
+  opacity:1;
+}
+
+/* Home */
+
+.container-xl{
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width:80%;
+  position: relative;
 }

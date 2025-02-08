@@ -6,7 +6,7 @@ export default function NavBar(){
         
             <div className='nav flex'>
                 <div className='container-lg flex'>
-                    <div className = 'nav-col'>
+                    <div className = 'nav-col '>
                             <div className='logo-container'>
                                 <img src={logo} alt='drakes logo' className = 'logo'/>
                         
