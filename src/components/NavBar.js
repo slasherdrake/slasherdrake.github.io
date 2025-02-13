@@ -18,25 +18,30 @@ export default function NavBar(){
                             
                             </div>
                     </div>
+                    <div className='border-grey-top'></div>
                     <div className='nav-col'>
                 
-                        <Link to='/' className='nav-right-box border-grey'>
-                            HOME
+                        <Link to='/' className='nav-right-box border-grey-left border-grey-right'>
+                            
+                            <div className='nav-right-text'>HOME</div>
                             <div className='nav-right-box under-text'>HOME</div>
                             <div className='under'></div>
+                            
                         </Link>
                         
-                        <Link to='about' className='nav-right-box border-grey'>
-                            ABOUT
+                        <Link to='about' className='nav-right-box border-grey-right'>
+                            <div className='nav-right-text'>ABOUT</div>
                             <div className='nav-right-box under-text'>ABOUT</div>
                             <div className='under'></div>
                         </Link>
-                        <Link to='projects' className='nav-right-box border-grey'>
-                            PROJECTS
+                        <Link to='projects' className='nav-right-box border-grey-right'>
+                            <div className='nav-right-text'>PROJECTS</div>
                             <div className='nav-right-box under-text'>PROJECTS</div>
                             <div className='under'></div>
                         </Link>
+                        
                     </div>
+                    <div className='border-grey-bottom'></div>
                 </div>
             </div>
         
