@@ -1,8 +1,16 @@
 #root{
   background-color: #0F1819;
   color: #EBEBEB;
-  
+  height:100vh;
+
 }
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+}
+
 .flex{
   display: flex;
 }
@@ -15,7 +23,9 @@
 .green{
   color: #99EF03;
 }
-
+.red{
+  color:#EB4826
+}
 
 .nav{
   margin-top: 2rem;
@@ -270,6 +280,22 @@
   margin-right: 10%;
   width:80%;
   position: relative;
+}
+
+.portfolio-card{
+  width:100%;
+  margin-right: 2%;
+  display: flex;
+  height:100%;
+}
+.left-card{
+  width: 50%;
+}
+.right-card{
+  width: 50%;
+}
+.card-img{
+  width:50%;
 }
 
 

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as HashRouter, Route, Routes } from "react-router-dom";
 import NavBar from './components/NavBar.js';
 import Home from './pages/Home.js';
 import About from './pages/About.js';
@@ -6,7 +6,7 @@ import Projects from './pages/Projects.js';
 import './App.css'
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div className="app">
         <NavBar />
         <div className='nav-space'></div>
@@ -18,7 +18,7 @@ const App = () => {
           </Routes>
         </main>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 

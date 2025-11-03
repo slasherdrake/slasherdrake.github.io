@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "homepage": "https://slasherdrake.github.io/slasherdrake.github.io",
+  "homepage": "https://slasherdrake.github.io",
   "dependencies": {
     "cra-template": "1.2.0",
     "gh-pages": "^6.3.0",
