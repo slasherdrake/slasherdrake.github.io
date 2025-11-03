@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a1d54de.css",
-    "main.js": "/static/js/main.8c3b0151.js",
+    "main.css": "/static/css/main.3d39a90f.css",
+    "main.js": "/static/js/main.b98eef23.js",
     "static/media/Songotter-Home.png": "/static/media/Songotter-Home.52cee96e92812cd94b39.png",
+    "static/media/luffy.png": "/static/media/luffy.96cc55414432038a5773.png",
     "static/media/DK.png": "/static/media/DK.88c969f658086bc964d3.png",
     "index.html": "/index.html",
-    "main.7a1d54de.css.map": "/static/css/main.7a1d54de.css.map",
-    "main.8c3b0151.js.map": "/static/js/main.8c3b0151.js.map"
+    "main.3d39a90f.css.map": "/static/css/main.3d39a90f.css.map",
+    "main.b98eef23.js.map": "/static/js/main.b98eef23.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a1d54de.css",
-    "static/js/main.8c3b0151.js"
+    "static/css/main.3d39a90f.css",
+    "static/js/main.b98eef23.js"
   ]
 }
