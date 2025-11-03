@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d39a90f.css",
-    "main.js": "/static/js/main.b98eef23.js",
+    "main.css": "/static/css/main.d9a3483b.css",
+    "main.js": "/static/js/main.a213f5c6.js",
     "static/media/Songotter-Home.png": "/static/media/Songotter-Home.52cee96e92812cd94b39.png",
+    "static/media/GitHub_Logo_White.png": "/static/media/GitHub_Logo_White.6149aa5ccbc036755594.png",
+    "static/media/LI-Logo.png": "/static/media/LI-Logo.a95afc06831647f5fca2.png",
     "static/media/luffy.png": "/static/media/luffy.96cc55414432038a5773.png",
     "static/media/DK.png": "/static/media/DK.88c969f658086bc964d3.png",
     "index.html": "/index.html",
-    "main.3d39a90f.css.map": "/static/css/main.3d39a90f.css.map",
-    "main.b98eef23.js.map": "/static/js/main.b98eef23.js.map"
+    "main.d9a3483b.css.map": "/static/css/main.d9a3483b.css.map",
+    "main.a213f5c6.js.map": "/static/js/main.a213f5c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d39a90f.css",
-    "static/js/main.b98eef23.js"
+    "static/css/main.d9a3483b.css",
+    "static/js/main.a213f5c6.js"
   ]
 }
